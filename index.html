@@ -1,45 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMDAUTOCENTER</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>TMD AUTO CENTER - Estética Automotiva</title>
     <style>
-        body { font-family: sans-serif; margin: 0; background-color: #f8f9fa; text-align: center; }
-        header { background-color: #1a1a1a; color: white; padding: 40px 20px; }
-        .btn { background-color: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin: 20px 0; transition: 0.3s; }
-        .card { background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 15px; padding: 20px; text-align: left; border-top: 5px solid #ffcc00; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 10px 0; border-bottom: 1px solid #eee; padding-bottom: 5px; font-size: 1.1em; }
-        i { color: #555; margin-right: 10px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fff; color: #333; }
+        header { background-color: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
+        .servicos-container { padding: 60px 20px; background-color: #f4f4f4; text-align: center; }
+        .grid-servicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        h3 { color: #e63946; margin-top: 15px; }
+        .icon { font-size: 3rem; }
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        .btn-whatsapp { background-color: #25d366; color: white; padding: 15px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>TMDAUTOCENTER</h1>
-        <p>Tecnologia e brilho para seu veículo ✨</p>
-        <a href="https://wa.me/5591996247327?text=Olá! Gostaria de informações sobre estética ou mecânica" class="btn">
-            <i class="fab fa-whatsapp"></i> AGENDAR VIA WHATSAPP
-        </a>
-    </header>
-    <div style="padding: 10px; max-width: 600px; margin: auto;">
+
+<header>
+    <h1>TMD AUTO CENTER</h1>
+    <p>Estética Automotiva de Alta Performance em Belém</p>
+</header>
+
+<section class="servicos-container">
+    <h2 style="font-size: 2rem; margin-bottom: 40px;">Nossos Serviços Especializados</h2>
+    
+    <div class="grid-servicos">
         <div class="card">
-            <h3><i class="fas fa-magic"></i> Estética Automotiva</h3>
-            <ul>
-                <li><i class="fas fa-car"></i> Lavagem e Polimento</li>
-                <li><i class="fas fa-gem"></i> Vitrificação</li>
-                <li><i class="fas fa-soap"></i> Higienização</li>
-            </ul>
+            <div class="icon">✨</div>
+            <h3>Polimento Técnico</h3>
+            <p>Correção de pintura detalhada para remoção de micro-riscos e devolução do brilho original.</p>
         </div>
+
         <div class="card">
-            <h3><i class="fas fa-tools"></i> Mecânica Geral</h3>
-            <ul>
-                <li><i class="fas fa-oil-can"></i> Troca de Óleo</li>
-                <li><i class="fas fa-wrench"></i> Freios e Suspensão</li>
-            </ul>
+            <div class="icon">🛡️</div>
+            <h3>Vitrificação</h3>
+            <p>Proteção com nanotecnologia que cria uma camada de vidro sobre a pintura contra raios UV e sujeira.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧼</div>
+            <h3>Higienização</h3>
+            <p>Limpeza profunda do interior, com revitalização de plásticos e hidratação de couros.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>Estética de Motor</h3>
+            <p>Limpeza técnica e proteção de componentes para um aspecto de carro zero quilômetro.</p>
         </div>
     </div>
+
+    <a href="https://wa.me/seunumeroaqui" class="btn-whatsapp">Solicitar Orçamento via WhatsApp</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 TMD Auto Center - Belém, Pará</p>
+</footer>
+
 </body>
 </html>
