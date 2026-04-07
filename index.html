@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMD AUTO CENTER - Estética Automotiva Premium</title>
+    <title>TMD AUTO CENTER - Centro Automotivo Premium</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -33,30 +33,41 @@
         }
 
         .logo-img {
-            max-width: 220px;
+            max-width: 200px;
             height: auto;
             margin-bottom: 10px;
         }
 
         header p { 
             margin: 5px 0 0; 
-            font-size: 1rem; 
+            font-size: 0.9rem; 
             color: var(--dourado-claro); 
-            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
         
+        h2 { 
+            text-align: center; 
+            color: var(--dourado); 
+            text-transform: uppercase; 
+            font-size: 1.3rem; 
+            margin-top: 40px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
         details {
             background-color: var(--preto-card);
-            margin-bottom: 15px;
-            border-radius: 10px;
+            margin-bottom: 12px;
+            border-radius: 8px;
             border: 1px solid #2a2a2a;
         }
         
         summary {
-            padding: 20px;
-            font-size: 1.1rem;
+            padding: 18px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             list-style: none;
@@ -73,54 +84,85 @@
             background-color: #1c1c1c;
             border-top: 1px solid #2a2a2a;
             color: var(--cinza);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         strong { color: var(--dourado); }
 
+        .contatos-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
         .btn-whatsapp {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             background: linear-gradient(45deg, #b8860b, var(--dourado));
             color: #000;
-            text-align: center;
-            padding: 18px;
+            padding: 15px;
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 12px;
             font-weight: bold;
-            margin-top: 30px;
-            text-transform: uppercase;
+            font-size: 0.85rem;
+            text-align: center;
+            transition: transform 0.2s;
         }
+
+        .btn-whatsapp span { font-size: 0.7rem; font-weight: normal; opacity: 0.8; }
         
-        footer { text-align: center; padding: 30px; color: #555; font-size: 0.8rem; }
+        .endereco-box {
+            background-color: #111;
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 12px;
+            border: 1px dashed var(--dourado);
+            text-align: center;
+        }
+
+        .endereco-box h3 { color: var(--dourado); margin-top: 0; font-size: 1rem; }
+        .endereco-box p { color: var(--branco); font-size: 0.9rem; margin-bottom: 0; }
+
+        footer { text-align: center; padding: 40px; color: #444; font-size: 0.75rem; }
+
+        @media (max-width: 600px) {
+            .contatos-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <img src="1001014785.png" alt="TMD Auto Center" class="logo-img">
-    <p>Estética Automotiva de Alta Performance - Belém/PA</p>
+    <p>Centro Automotivo Premium</p>
 </header>
 
 <div class="container">
+
+    <h2>Estética Automotiva</h2>
+
     <details>
         <summary>Polimento Técnico / Cristalizado</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
             1. Descontaminação detalhada (Clay Bar).<br>
-            2. Mascaramento de plásticos e borrachas.<br>
-            3. Corte, Refino e Lustre para brilho espelhado.<br>
-            4. Remoção de riscos e oxidação.
+            2. Mascaramento de áreas sensíveis.<br>
+            3. Correção de pintura (Corte, Refino e Lustre).<br>
+            4. Proteção com selante de alta performance.
         </div>
     </details>
 
     <details>
-        <summary>Vitrificação de Pintura (Ceramic Coating)</summary>
+        <summary>Vitrificação de Pintura</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Polimento Técnico preparatório.<br>
-            2. Limpeza química profunda.<br>
-            3. Aplicação do vitrificador nanotecnológico.<br>
-            4. Proteção contra UV e efeito hidrofóbico.
+            1. Preparação técnica da superfície.<br>
+            2. Desengorduramento químico completo.<br>
+            3. Aplicação do revestimento cerâmico.<br>
+            4. Cura controlada para máxima dureza e brilho.
         </div>
     </details>
 
@@ -128,28 +170,67 @@
         <summary>Higienização Interna Detalhada</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Aspiração profunda.<br>
-            2. Extração bactericida em bancos e carpetes.<br>
-            3. Higienização técnica de painel e teto.<br>
-            4. Hidratação de couros e proteção de plásticos.
+            1. Aspiração profunda e extração bactericida.<br>
+            2. Higienização técnica de painel, teto e carpetes.<br>
+            3. Hidratação premium de couros e proteção de plásticos.
+        </div>
+    </details>
+
+    <h2>Mecânica Especializada</h2>
+
+    <details>
+        <summary>Motor, Câmbio e ABS</summary>
+        <div class="conteudo">
+            <strong>O Processo:</strong><br>
+            1. Avaliação minuciosa de componentes internos.<br>
+            2. Diagnóstico eletrônico do sistema de Freios e ABS.<br>
+            3. Manutenção preventiva e corretiva especializada.<br>
+            4. Teste de performance e calibração final.
         </div>
     </details>
 
     <details>
-        <summary>Estética de Motor</summary>
+        <summary>Injeção Eletrônica e Limpeza de Bicos</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Proteção de componentes eletrônicos.<br>
-            2. Limpeza detalhada com pincéis.<br>
-            3. Aplicação de verniz de motor para proteção e brilho seco.
+            1. Diagnóstico de vazão e estanqueidade.<br>
+            2. Limpeza por ultrassom de última geração.<br>
+            3. Verificação completa de sensores e atuadores.
         </div>
     </details>
 
-    <a href="https://wa.me/5591999999999" class="btn-whatsapp">Agendar via WhatsApp</a>
+    <details>
+        <summary>Diagnóstico Avançado com Escâner</summary>
+        <div class="conteudo">
+            <strong>O Processo:</strong><br>
+            1. Varredura completa dos módulos eletrônicos.<br>
+            2. Identificação e reset de códigos de falha (DTCs).<br>
+            3. Monitoramento de parâmetros em tempo real.
+        </div>
+    </details>
+
+    <h2>Fale Conosco</h2>
+    
+    <div class="contatos-grid">
+        <a href="https://wa.me/5591996247327" class="btn-whatsapp">
+            FALAR COM MICHEL
+            <span>Estética Automotiva</span>
+        </a>
+        <a href="https://wa.me/5591980702407" class="btn-whatsapp">
+            FALAR COM DÉLCIO
+            <span>Mecânica Automotiva</span>
+        </a>
+    </div>
+
+    <div class="endereco-box">
+        <h3>Localização</h3>
+        <p>Tv. Barão de Mamoré, 397 - Guamá<br>Belém - PA</p>
+    </div>
+
 </div>
 
 <footer>
-    <p>&copy; 2026 TMD Auto Center - O Padrão Ouro em Estética Automotiva.</p>
+    <p>&copy; 2026 TMD Auto Center. Todos os direitos reservados.</p>
 </footer>
 
 </body>
