@@ -3,119 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMD AUTO CENTER - Estética Automotiva Premium</title>
+    <title>TMD AUTO CENTER</title>
     <style>
-        /* Cores da Marca */
-        :root {
-            --preto-fundo: #0a0a0a; /* Preto quase puro para profundidade */
-            --preto-card: #161616; /* Preto ligeiramente mais claro para os cards */
-            --dourado-principal: #d4af37; /* Dourado metálico clássico */
-            --dourado-claro: #f1e5ac; /* Dourado suave para textos secundários */
-            --branco-texto: #ffffff;
-            --cinza-texto: #a0a0a0;
-        }
+        body { background-color: #0a0a0a; color: #ffffff; font-family: sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { padding: 40px 20px; border-bottom: 2px solid #d4af37; background: #000; }
+        h1 { color: #d4af37; margin: 0; font-size: 24px; }
+        .container { padding: 20px; max-width: 600px; margin: 0 auto; }
+        details { background: #1a1a1a; margin: 15px 0; border-radius: 8px; border: 1px solid #333; }
+        summary { padding: 20px; font-weight: bold; color: #d4af37; cursor: pointer; outline: none; }
+        .conteudo { padding: 20px; color: #ccc; line-height: 1.5; border-top: 1px solid #333; text-align: left; }
+        .btn { display: block; background: #d4af37; color: #000; padding: 15px; margin-top: 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
 
-        body { 
-            font-family: 'Poppins', 'Segoe UI', sans-serif; /* Fonte mais moderna e elegante */
-            margin: 0; 
-            padding: 0; 
-            background-color: var(--preto-fundo); 
-            color: var(--branco-texto); 
-        }
+<header>
+    <h1>TMD AUTO CENTER</h1>
+    <p style="color: #f1e5ac;">Estética Automotiva Premium</p>
+</header>
 
-        header { 
-            background-color: #000; 
-            padding: 60px 20px; 
-            text-align: center; 
-            border-bottom: 3px solid var(--dourado-principal); /* Linha dourada de destaque */
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2); /* Sombra dourada sutil */
-        }
+<div class="container">
+    <details>
+        <summary>Polimento Técnico</summary>
+        <div class="conteudo">Remoção de riscos e restauração do brilho original da pintura.</div>
+    </details>
 
-        header h1 { 
-            margin: 0; 
-            font-size: 2.8rem; 
-            color: var(--dourado-principal); 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-        }
+    <details>
+        <summary>Vitrificação</summary>
+        <div class="conteudo">Proteção cerâmica de alta durabilidade e brilho intenso.</div>
+    </details>
 
-        header p { 
-            margin: 10px 0 0; 
-            font-size: 1.1rem; 
-            color: var(--dourado-claro); 
-            font-weight: 300;
-        }
+    <details>
+        <summary>Higienização Interna</summary>
+        <div class="conteudo">Limpeza profunda e bactericida de bancos e painéis.</div>
+    </details>
 
-        .container { 
-            max-width: 850px; 
-            margin: 0 auto; 
-            padding: 50px 20px; 
-        }
+    <a href="https://wa.me/5591999999999" class="btn">Falar no WhatsApp</a>
+</div>
 
-        h2 { 
-            text-align: center; 
-            color: var(--branco-texto); 
-            margin-bottom: 40px; 
-            font-size: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        /* Estilo da Sanfona (Accordion) Premium */
-        details {
-            background-color: var(--preto-card);
-            margin-bottom: 18px;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid #2a2a2a; /* Borda escura sutil */
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
+<footer style="margin-top: 50px; color: #444; font-size: 12px;">
+    <p>Belém - Pará</p>
+</footer>
 
-        details:hover {
-            border-color: var(--dourado-principal); /* Borda brilha em dourado no hover */
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
-        }
-        
-        summary {
-            padding: 22px;
-            font-size: 1.25rem;
-            font-weight: 600;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s;
-            color: var(--dourado-claro); /* Texto do título em dourado claro */
-        }
-        
-        summary:hover { background-color: #1a1a1a; }
-        
-        /* Ícone de seta dourado */
-        summary::after {
-            content: '+'; /* Usando + e - para um visual mais clean */
-            font-size: 1.5rem;
-            transition: transform 0.3s, color 0.3s;
-            color: var(--dourado-principal);
-            font-weight: 300;
-        }
-        
-        details[open] summary::after { 
-            content: '-';
-            color: var(--branco-texto);
-        }
-        
-        .conteudo {
-            padding: 25px;
-            background-color: #1c1c1c; /* Fundo do conteúdo ligeiramente diferente */
-            border-top: 1px solid #2a2a2a;
-            line-height: 1.7;
-            color: var(--cinza-texto);
-            font-size: 1.05rem;
-        }
-
-        /* Botão do WhatsApp Estilizado Dourado */
-        .btn-whatsapp {
-            display: block;
-            background: linear-gradient(45deg, #b8860b, var(--dourado-principal)); /* Gradiente dourado */
-            color: #000
+</body>
+</html>
