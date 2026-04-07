@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMD AUTO CENTER - Centro Automotivo Premium</title>
+    <title>TMD AUTO CENTER - Estética e Mecânica</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -15,122 +15,41 @@
             --cinza: #a0a0a0;
         }
 
-        body { 
-            font-family: 'Poppins', sans-serif; 
-            margin: 0; padding: 0; 
-            background-color: var(--preto-fundo); 
-            color: var(--branco); 
-        }
-
-        header { 
-            background-color: #000; 
-            padding: 40px 20px; 
-            text-align: center; 
-            border-bottom: 3px solid var(--dourado); 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .logo-img {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        header p { 
-            margin: 5px 0 0; 
-            font-size: 0.9rem; 
-            color: var(--dourado-claro); 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: var(--preto-fundo); color: var(--branco); }
+        header { background-color: #000; padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--dourado); display: flex; flex-direction: column; align-items: center; }
+        .logo-img { max-width: 200px; height: auto; margin-bottom: 10px; }
+        header p { margin: 5px 0 0; font-size: 0.9rem; color: var(--dourado-claro); text-transform: uppercase; letter-spacing: 1px; }
 
         .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
-        
-        h2 { 
-            text-align: center; 
-            color: var(--dourado); 
-            text-transform: uppercase; 
-            font-size: 1.3rem; 
-            margin-top: 40px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-        }
+        h2 { text-align: center; color: var(--dourado); text-transform: uppercase; font-size: 1.3rem; margin-top: 40px; border-bottom: 1px solid #333; padding-bottom: 10px; }
 
-        details {
-            background-color: var(--preto-card);
-            margin-bottom: 12px;
-            border-radius: 8px;
-            border: 1px solid #2a2a2a;
-        }
-        
-        summary {
-            padding: 18px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            color: var(--dourado-claro);
-        }
-        
+        details { background-color: var(--preto-card); margin-bottom: 12px; border-radius: 8px; border: 1px solid #2a2a2a; }
+        summary { padding: 18px; font-size: 1rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; color: var(--dourado-claro); }
         summary::after { content: '+'; color: var(--dourado); }
         details[open] summary::after { content: '-'; }
-        
-        .conteudo {
-            padding: 20px;
-            background-color: #1c1c1c;
-            border-top: 1px solid #2a2a2a;
-            color: var(--cinza);
-            font-size: 0.9rem;
-        }
-
+        .conteudo { padding: 20px; background-color: #1c1c1c; border-top: 1px solid #2a2a2a; color: var(--cinza); font-size: 0.9rem; }
         strong { color: var(--dourado); }
 
-        .contatos-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 30px;
-        }
+        /* SEÇÃO FIDELIDADE */
+        .fidelidade-box { background: linear-gradient(145deg, #1a1a1a, #000); border: 2px solid var(--dourado); border-radius: 15px; padding: 25px; margin-top: 30px; text-align: center; box-shadow: 0 0 15px rgba(212, 175, 55, 0.1); }
+        .fidelidade-box h3 { color: var(--dourado); margin-top: 0; text-transform: uppercase; font-size: 1.1rem; }
+        .fidelidade-box p { font-size: 0.9rem; color: var(--branco); }
+        .selos { display: flex; justify-content: center; gap: 10px; margin: 15px 0; }
+        .circulo { width: 35px; height: 35px; border: 1px solid var(--dourado); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: var(--dourado); }
 
-        .btn-whatsapp {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(45deg, #b8860b, var(--dourado));
-            color: #000;
-            padding: 15px;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 0.85rem;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-
+        /* BOTÕES DE CONTATO */
+        .contatos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+        .btn-whatsapp { display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(45deg, #b8860b, var(--dourado)); color: #000; padding: 15px; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 0.85rem; text-align: center; }
         .btn-whatsapp span { font-size: 0.7rem; font-weight: normal; opacity: 0.8; }
         
-        .endereco-box {
-            background-color: #111;
-            padding: 25px;
-            margin-top: 40px;
-            border-radius: 12px;
-            border: 1px dashed var(--dourado);
-            text-align: center;
-        }
+        /* BOTÃO MAPAS */
+        .btn-mapa { display: block; background-color: transparent; border: 1px solid var(--dourado); color: var(--dourado); padding: 15px; text-decoration: none; border-radius: 12px; font-weight: bold; margin-top: 15px; text-align: center; transition: 0.3s; }
+        .btn-mapa:hover { background-color: var(--dourado); color: #000; }
 
-        .endereco-box h3 { color: var(--dourado); margin-top: 0; font-size: 1rem; }
-        .endereco-box p { color: var(--branco); font-size: 0.9rem; margin-bottom: 0; }
-
+        .endereco-box { background-color: #111; padding: 25px; margin-top: 40px; border-radius: 12px; border: 1px dashed #444; text-align: center; }
         footer { text-align: center; padding: 40px; color: #444; font-size: 0.75rem; }
 
-        @media (max-width: 600px) {
-            .contatos-grid { grid-template-columns: 1fr; }
-        }
+        @media (max-width: 600px) { .contatos-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -142,108 +61,49 @@
 
 <div class="container">
 
-    <h2>Estética Automotiva</h2>
+    <div class="fidelidade-box">
+        <h3>Cartão Fidelidade TMD</h3>
+        <p>A cada <strong>5 Lavagens Detalhadas</strong>, a 6ª é por nossa conta!</p>
+        <div class="selos">
+            <div class="circulo">1</div><div class="circulo">2</div><div class="circulo">3</div><div class="circulo">4</div><div class="circulo">5</div><div class="circulo" style="background: var(--dourado); color: #000; font-weight: bold;">6</div>
+        </div>
+        <p style="font-size: 0.75rem; opacity: 0.7;">*Consulte condições para outros serviços.</p>
+    </div>
 
+    <h2>Serviços de Estética</h2>
     <details>
         <summary>Lavagem Externa Detalhada</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. <strong>Pré-lavagem:</strong> Aplicação de Snow Foam para soltar a sujeira sem riscar.<br>
-            2. <strong>Lavagem Técnica:</strong> Método de dois baldes com luva de microfibra premium.<br>
-            3. <strong>Limpeza de Rodas:</strong> Remoção de fuligem de freio e sujeira incrustada.<br>
-            4. <strong>Secagem Segura:</strong> Uso de toalhas de secagem de alta absorção.<br>
-            5. <strong>Acabamento:</strong> Aplicação de pretinho premium e cera líquida de proteção.
-        </div>
+        <div class="conteudo"><strong>O Processo:</strong><br>1. Pré-lavagem Snow Foam.<br>2. Lavagem técnica com microfibra.<br>3. Limpeza de rodas e caixas de rodas.<br>4. Secagem segura e acabamento premium.</div>
     </details>
-
     <details>
-        <summary>Polimento Técnico / Cristalizado</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Descontaminação detalhada (Clay Bar).<br>
-            2. Mascaramento de áreas sensíveis.<br>
-            3. Correção de pintura (Corte, Refino e Lustre).<br>
-            4. Proteção com selante de alta performance.
-        </div>
-    </details>
-
-    <details>
-        <summary>Vitrificação de Pintura</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Preparação técnica da superfície.<br>
-            2. Desengorduramento químico completo.<br>
-            3. Aplicação do revestimento cerâmico.<br>
-            4. Cura controlada para máxima dureza e brilho.
-        </div>
-    </details>
-
-    <details>
-        <summary>Higienização Interna Detalhada</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Aspiração profunda e extração bactericida.<br>
-            2. Higienização técnica de painel, teto e carpetes.<br>
-            3. Hidratação premium de couros e proteção de plásticos.
-        </div>
+        <summary>Polimento e Vitrificação</summary>
+        <div class="conteudo"><strong>O Processo:</strong><br>1. Descontaminação de pintura.<br>2. Correção de riscos e brilho.<br>3. Proteção cerâmica de alta durabilidade.</div>
     </details>
 
     <h2>Mecânica Especializada</h2>
-
     <details>
-        <summary>Motor, Câmbio e ABS</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Avaliação minuciosa de componentes internos.<br>
-            2. Diagnóstico eletrônico do sistema de Freios e ABS.<br>
-            3. Manutenção preventiva e corretiva especializada.<br>
-            4. Teste de performance e calibração final.
-        </div>
+        <summary>Motor, Câmbio e Injeção</summary>
+        <div class="conteudo"><strong>O Processo:</strong><br>1. Diagnóstico eletrônico avançado.<br>2. Limpeza de bicos por ultrassom.<br>3. Revisão de componentes vitais.</div>
     </details>
-
     <details>
-        <summary>Injeção Eletrônica e Limpeza de Bicos</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Diagnóstico de vazão e estanqueidade.<br>
-            2. Limpeza por ultrassom de última geração.<br>
-            3. Verificação completa de sensores e atuadores.
-        </div>
-    </details>
-
-    <details>
-        <summary>Diagnóstico Avançado com Escâner</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Varredura completa dos módulos eletrônicos.<br>
-            2. Identificação e reset de códigos de falha (DTCs).<br>
-            3. Monitoramento de parâmetros em tempo real.
-        </div>
+        <summary>Suspensão, Freios e ABS</summary>
+        <div class="conteudo"><strong>O Processo:</strong><br>1. Inspeção de segurança.<br>2. Substituição de peças com garantia.<br>3. Teste de rodagem profissional.</div>
     </details>
 
     <h2>Fale Conosco</h2>
-    
     <div class="contatos-grid">
-        <a href="https://wa.me/5591996247327" class="btn-whatsapp">
-            FALAR COM MICHEL
-            <span>Estética Automotiva</span>
-        </a>
-        <a href="https://wa.me/5591980702407" class="btn-whatsapp">
-            FALAR COM DÉLCIO
-            <span>Mecânica Automotiva</span>
-        </a>
+        <a href="https://wa.me/5591996247327" class="btn-whatsapp">FALAR COM MICHEL<span>Estética Automotiva</span></a>
+        <a href="https://wa.me/5591980702407" class="btn-whatsapp">FALAR COM DÉLCIO<span>Mecânica Automotiva</span></a>
     </div>
 
     <div class="endereco-box">
-        <h3>Localização</h3>
-        <p>Tv. Barão de Mamoré, 397 - Guamá<br>Belém - PA</p>
+        <p><strong>Tv. Barão de Mamoré, 397 - Guamá</strong><br>Belém - PA</p>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Tv.+Barão+de+Mamoré,+397+-+Guamá,+Belém+-+PA" target="_blank" class="btn-mapa">ABRIR ROTA NO GPS (MAPS)</a>
     </div>
 
 </div>
 
-<footer>
-    <p>&copy; 2026 TMD Auto Center. Todos os direitos reservados.</p>
-</footer>
+<footer><p>&copy; 2026 TMD Auto Center. Todos os direitos reservados.</p></footer>
 
 </body>
 </html>
