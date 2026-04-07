@@ -17,76 +17,55 @@
 
         body { 
             font-family: 'Poppins', sans-serif; 
-            margin: 0; 
-            padding: 0; 
+            margin: 0; padding: 0; 
             background-color: var(--preto-fundo); 
             color: var(--branco); 
-            line-height: 1.6;
         }
 
         header { 
             background-color: #000; 
-            padding: 50px 20px; 
+            padding: 40px 20px; 
             text-align: center; 
             border-bottom: 3px solid var(--dourado); 
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        header h1 { 
-            margin: 0; 
-            font-size: 2.5rem; 
-            color: var(--dourado); 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
+        .logo-img {
+            max-width: 220px;
+            height: auto;
+            margin-bottom: 10px;
         }
 
         header p { 
-            margin: 10px 0 0; 
-            font-size: 1.1rem; 
+            margin: 5px 0 0; 
+            font-size: 1rem; 
             color: var(--dourado-claro); 
+            font-weight: 300;
         }
 
-        .container { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
-        }
-
-        h2 { 
-            text-align: center; 
-            color: var(--branco); 
-            text-transform: uppercase;
-            margin-bottom: 30px;
-        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         
         details {
             background-color: var(--preto-card);
             margin-bottom: 15px;
             border-radius: 10px;
             border: 1px solid #2a2a2a;
-            transition: all 0.3s;
         }
-
-        details:hover { border-color: var(--dourado); }
         
         summary {
             padding: 20px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
             list-style: none;
             display: flex;
             justify-content: space-between;
-            align-items: center;
             color: var(--dourado-claro);
         }
         
-        summary::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: var(--dourado);
-        }
-        
+        summary::after { content: '+'; color: var(--dourado); }
         details[open] summary::after { content: '-'; }
         
         .conteudo {
@@ -94,6 +73,7 @@
             background-color: #1c1c1c;
             border-top: 1px solid #2a2a2a;
             color: var(--cinza);
+            font-size: 0.95rem;
         }
 
         strong { color: var(--dourado); }
@@ -107,38 +87,29 @@
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            margin-top: 40px;
+            margin-top: 30px;
             text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
         
-        footer { 
-            text-align: center; 
-            padding: 30px; 
-            color: #555; 
-            font-size: 0.8rem;
-        }
+        footer { text-align: center; padding: 30px; color: #555; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>TMD AUTO CENTER</h1>
-    <p>O Padrão Ouro em Estética Automotiva - Belém/PA</p>
+    <img src="1001014785.png" alt="TMD Auto Center" class="logo-img">
+    <p>Estética Automotiva de Alta Performance - Belém/PA</p>
 </header>
 
 <div class="container">
-    <h2>Nossos Serviços Especializados</h2>
-
     <details>
         <summary>Polimento Técnico / Cristalizado</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Descontaminação detalhada da pintura (Clay Bar).<br>
+            1. Descontaminação detalhada (Clay Bar).<br>
             2. Mascaramento de plásticos e borrachas.<br>
-            3. Etapas de Corte, Refino e Lustre para brilho espelhado.<br>
-            4. Remoção de riscos, hologramas e oxidação.<br>
-            5. Finalização com selante para proteção prolongada.
+            3. Corte, Refino e Lustre para brilho espelhado.<br>
+            4. Remoção de riscos e oxidação.
         </div>
     </details>
 
@@ -146,11 +117,10 @@
         <summary>Vitrificação de Pintura (Ceramic Coating)</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Preparação total da superfície com Polimento Técnico.<br>
-            2. Limpeza química (Revelador de hologramas).<br>
-            3. Aplicação do vitrificador de alta tecnologia.<br>
-            4. Proteção contra raios UV, fezes de pássaros e seiva.<br>
-            5. Efeito hidrofóbico (repelência extrema à água).
+            1. Polimento Técnico preparatório.<br>
+            2. Limpeza química profunda.<br>
+            3. Aplicação do vitrificador nanotecnológico.<br>
+            4. Proteção contra UV e efeito hidrofóbico.
         </div>
     </details>
 
@@ -158,11 +128,10 @@
         <summary>Higienização Interna Detalhada</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Aspiração profunda e remoção de resíduos.<br>
-            2. Limpeza técnica de teto, colunas e carpetes.<br>
-            3. Extração de sujeira bactericida em bancos.<br>
-            4. Revitalização e proteção de painéis e plásticos.<br>
-            5. Hidratação premium de bancos em couro.
+            1. Aspiração profunda.<br>
+            2. Extração bactericida em bancos e carpetes.<br>
+            3. Higienização técnica de painel e teto.<br>
+            4. Hidratação de couros e proteção de plásticos.
         </div>
     </details>
 
@@ -170,11 +139,9 @@
         <summary>Estética de Motor</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Isolamento de componentes eletrônicos e sensíveis.<br>
-            2. Limpeza técnica detalhada com pincéis e APC.<br>
-            3. Remoção de gorduras e oxidações acumuladas.<br>
-            4. Aplicação de verniz de motor (proteção e brilho seco).<br>
-            5. Aspecto de carro novo com segurança total.
+            1. Proteção de componentes eletrônicos.<br>
+            2. Limpeza detalhada com pincéis.<br>
+            3. Aplicação de verniz de motor para proteção e brilho seco.
         </div>
     </details>
 
@@ -182,7 +149,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2026 TMD Auto Center. Todos os direitos reservados.</p>
+    <p>&copy; 2026 TMD Auto Center - O Padrão Ouro em Estética Automotiva.</p>
 </footer>
 
 </body>
