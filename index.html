@@ -15,156 +15,43 @@
             --cinza: #a0a0a0;
         }
 
-        body { 
-            font-family: 'Poppins', sans-serif; 
-            margin: 0; padding: 0; 
-            background-color: var(--preto-fundo); 
-            color: var(--branco); 
-            line-height: 1.6;
-        }
-
-        header { 
-            background-color: #000; 
-            padding: 40px 20px; 
-            text-align: center; 
-            border-bottom: 3px solid var(--dourado); 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .logo-img {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        header p { 
-            margin: 5px 0 0; 
-            font-size: 0.9rem; 
-            color: var(--dourado-claro); 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: var(--preto-fundo); color: var(--branco); line-height: 1.6; }
+        header { background-color: #000; padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--dourado); display: flex; flex-direction: column; align-items: center; }
+        .logo-img { max-width: 200px; height: auto; margin-bottom: 10px; }
+        header p { margin: 5px 0 0; font-size: 0.9rem; color: var(--dourado-claro); text-transform: uppercase; letter-spacing: 1px; }
 
         .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
-        
-        h2 { 
-            text-align: center; 
-            color: var(--dourado); 
-            text-transform: uppercase; 
-            font-size: 1.3rem; 
-            margin-top: 40px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-        }
+        h2 { text-align: center; color: var(--dourado); text-transform: uppercase; font-size: 1.3rem; margin-top: 40px; border-bottom: 1px solid #333; padding-bottom: 10px; }
 
-        /* SEÇÃO FIDELIDADE */
-        .fidelidade-box {
-            background: linear-gradient(145deg, #1a1a1a, #000);
-            border: 2px solid var(--dourado);
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
-        }
+        .fidelidade-box { background: linear-gradient(145deg, #1a1a1a, #000); border: 2px solid var(--dourado); border-radius: 15px; padding: 25px; margin-bottom: 30px; text-align: center; }
         .fidelidade-box h3 { color: var(--dourado); margin: 0 0 10px 0; text-transform: uppercase; font-size: 1.1rem; }
         .selos { display: flex; justify-content: center; gap: 8px; margin: 15px 0; flex-wrap: wrap; }
         .circulo { width: 35px; height: 35px; border: 1px solid var(--dourado); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: var(--dourado); }
         .circulo.especial { background: var(--dourado); color: #000; font-weight: bold; }
 
-        details {
-            background-color: var(--preto-card);
-            margin-bottom: 12px;
-            border-radius: 8px;
-            border: 1px solid #2a2a2a;
-        }
-        
-        summary {
-            padding: 18px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            color: var(--dourado-claro);
-        }
-        
+        details { background-color: var(--preto-card); margin-bottom: 12px; border-radius: 8px; border: 1px solid #2a2a2a; }
+        summary { padding: 18px; font-size: 1rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; color: var(--dourado-claro); }
         summary::after { content: '+'; color: var(--dourado); }
         details[open] summary::after { content: '-'; }
-        
-        .conteudo {
-            padding: 20px;
-            background-color: #1c1c1c;
-            border-top: 1px solid #2a2a2a;
-            color: var(--cinza);
-            font-size: 0.9rem;
-        }
-
+        .conteudo { padding: 20px; background-color: #1c1c1c; border-top: 1px solid #2a2a2a; color: var(--cinza); font-size: 0.9rem; }
         strong { color: var(--dourado); }
 
-        /* BOTÕES DE CONTATO */
-        .contatos-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .btn-whatsapp {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(45deg, #b8860b, var(--dourado));
-            color: #000;
-            padding: 15px;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 0.85rem;
-            text-align: center;
-        }
-
+        .contatos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+        .btn-whatsapp { display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(45deg, #b8860b, var(--dourado)); color: #000; padding: 15px; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 0.85rem; text-align: center; }
         .btn-whatsapp span { font-size: 0.7rem; font-weight: normal; opacity: 0.8; }
         
-        /* BOTÃO MAPA */
-        .btn-mapa {
-            display: block;
-            background-color: transparent;
-            border: 1px solid var(--dourado);
-            color: var(--dourado);
-            padding: 15px;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            margin-top: 15px;
-            text-align: center;
-        }
-
-        .endereco-box {
-            background-color: #111;
-            padding: 25px;
-            margin-top: 40px;
-            border-radius: 12px;
-            border: 1px dashed #444;
-            text-align: center;
-        }
-
+        .btn-mapa { display: block; background-color: transparent; border: 1px solid var(--dourado); color: var(--dourado); padding: 15px; text-decoration: none; border-radius: 12px; font-weight: bold; margin-top: 15px; text-align: center; }
+        .endereco-box { background-color: #111; padding: 25px; margin-top: 40px; border-radius: 12px; border: 1px dashed #444; text-align: center; }
         footer { text-align: center; padding: 40px; color: #444; font-size: 0.75rem; }
 
-        @media (max-width: 600px) {
-            .contatos-grid { grid-template-columns: 1fr; }
-        }
+        @media (max-width: 600px) { .contatos-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
 <header>
     <img src="1001014785.png" alt="TMD Auto Center" class="logo-img">
-    <p>Centro Automotivo Premium</p>
+    <p>Centro Automotivo Premium - Belém/PA</p>
 </header>
 
 <div class="container">
@@ -173,14 +60,8 @@
         <h3>Cartão Fidelidade TMD</h3>
         <p>A cada <strong>5 Lavagens Detalhadas</strong>, a 6ª é por nossa conta!</p>
         <div class="selos">
-            <div class="circulo">1</div>
-            <div class="circulo">2</div>
-            <div class="circulo">3</div>
-            <div class="circulo">4</div>
-            <div class="circulo">5</div>
-            <div class="circulo especial">6</div>
+            <div class="circulo">1</div><div class="circulo">2</div><div class="circulo">3</div><div class="circulo">4</div><div class="circulo">5</div><div class="circulo especial">6</div>
         </div>
-        <p style="font-size: 0.7rem; opacity: 0.6;">Válido para serviços de estética selecionados.</p>
     </div>
 
     <h2>Estética Automotiva</h2>
@@ -189,10 +70,10 @@
         <summary>Lavagem Externa Detalhada</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Pré-lavagem Snow Foam (espuma densa).<br>
-            2. Lavagem técnica com luvas de microfibra.<br>
-            3. Limpeza detalhada de rodas e pneus.<br>
-            4. Secagem segura e acabamento com cera líquida.
+            1. Pré-lavagem Snow Foam.<br>
+            2. Lavagem técnica com luva de microfibra.<br>
+            3. Limpeza de rodas e caixas de rodas.<br>
+            4. Acabamento com proteção líquida.
         </div>
     </details>
 
@@ -201,9 +82,9 @@
         <div class="conteudo">
             <strong>O Processo:</strong><br>
             1. Descontaminação profunda (Clay Bar).<br>
-            2. Mascaramento de borrachas e plásticos.<br>
-            3. Etapas de Corte, Refino e Lustre.<br>
-            4. Proteção com selante de alta performance.
+            2. Mascaramento de áreas sensíveis.<br>
+            3. Correção de pintura (Corte, Refino e Lustre).<br>
+            4. Proteção com selante premium.
         </div>
     </details>
 
@@ -211,10 +92,20 @@
         <summary>Vitrificação de Pintura</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Preparação técnica com Polimento.<br>
-            2. Limpeza química (IPD).<br>
-            3. Aplicação do vitrificador cerâmico.<br>
-            4. Efeito hidrofóbico e proteção UV.
+            1. Preparação total da superfície.<br>
+            2. Aplicação do revestimento cerâmico (9H).<br>
+            3. Proteção UV e repelência extrema à água.
+        </div>
+    </details>
+
+    <details>
+        <summary>Descontaminação e Hidro-repelência de Vidros</summary>
+        <div class="conteudo">
+            <strong>O Processo:</strong><br>
+            1. Remoção de "chuva ácida" e manchas de minerais.<br>
+            2. Polimento manual para restaurar a transparência.<br>
+            3. Aplicação de selante hidro-repelente (ajuda na visão sob chuva).<br>
+            4. Longa durabilidade e segurança na rodagem.
         </div>
     </details>
 
@@ -222,78 +113,49 @@
         <summary>Higienização Interna Detalhada</summary>
         <div class="conteudo">
             <strong>O Processo:</strong><br>
-            1. Aspiração profunda e extração de sujeira.<br>
-            2. Limpeza técnica de teto, painel e portas.<br>
-            3. Hidratação premium de bancos em couro.
+            1. Aspiração profunda e extração bactericida.<br>
+            2. Limpeza técnica de painel, teto e carpetes.<br>
+            3. Hidratação de couros e proteção de plásticos.
         </div>
     </details>
 
     <h2>Mecânica Especializada</h2>
 
     <details>
-        <summary>Motor, Câmbio e ABS</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Avaliação técnica de componentes internos.<br>
-            2. Diagnóstico eletrônico do sistema de freios ABS.<br>
-            3. Manutenção preventiva e corretiva.<br>
-            4. Teste de rodagem profissional.
-        </div>
+        <summary>Motor e Câmbio</summary>
+        <div class="conteudo"><strong>O Processo:</strong> Avaliação técnica, manutenção corretiva e preventiva de componentes internos.</div>
     </details>
 
     <details>
         <summary>Injeção Eletrônica e Limpeza de Bicos</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Teste de vazão e estanqueidade.<br>
-            2. Limpeza por ultrassom de alta frequência.<br>
-            3. Verificação de sensores e atuadores.
-        </div>
+        <div class="conteudo"><strong>O Processo:</strong> Diagnóstico de vazão e limpeza por ultrassom de bicos injetores.</div>
     </details>
 
     <details>
-        <summary>Suspensão e Freios</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Inspeção de amortecedores, buchas e pastilhas.<br>
-            2. Substituição técnica de componentes.<br>
-            3. Check-up de segurança completo.
-        </div>
+        <summary>Suspensão, Freios e ABS</summary>
+        <div class="conteudo"><strong>O Processo:</strong> Revisão de amortecedores, pastilhas e diagnóstico do sistema ABS.</div>
     </details>
 
     <details>
-        <summary>Diagnóstico Avançado com Escâner</summary>
-        <div class="conteudo">
-            <strong>O Processo:</strong><br>
-            1. Varredura completa dos módulos eletrônicos.<br>
-            2. Identificação e reset de códigos de falha.<br>
-            3. Monitoramento em tempo real do veículo.
-        </div>
+        <summary>Diagnóstico com Escâner</summary>
+        <div class="conteudo"><strong>O Processo:</strong> Varredura eletrônica completa e reset de códigos de falha.</div>
     </details>
 
     <h2>Agendamentos</h2>
     
     <div class="contatos-grid">
-        <a href="https://wa.me/5591996247327" class="btn-whatsapp">
-            FALAR COM MICHEL
-            <span>Estética Automotiva</span>
-        </a>
-        <a href="https://wa.me/5591980702407" class="btn-whatsapp">
-            FALAR COM DÉLCIO
-            <span>Mecânica Automotiva</span>
-        </a>
+        <a href="https://wa.me/5591996247327" class="btn-whatsapp">FALAR COM MICHEL<span>Estética Automotiva</span></a>
+        <a href="https://wa.me/5591980702407" class="btn-whatsapp">FALAR COM DÉLCIO<span>Mecânica Automotiva</span></a>
     </div>
 
     <div class="endereco-box">
         <p><strong>Tv. Barão de Mamoré, 397 - Guamá</strong><br>Belém - PA</p>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Tv.+Barão+de+Mamoré,+397+-+Guamá,+Belém+-+PA" target="_blank" class="btn-mapa">ABRIR ROTA NO GPS</a>
+        <a href="https://www.google.com/maps/dir//Tv.+Bar%C3%A3o+de+Mamor%C3%A9,+397+-+Guam%C3%A1,+Bel%C3%A9m+-+PA,+66073-070" target="_blank" class="btn-mapa">ABRIR ROTA NO GPS</a>
     </div>
 
 </div>
 
-<footer>
-    <p>&copy; 2026 TMD Auto Center. Excelência em cada detalhe.</p>
-</footer>
+<footer><p>© 2026 TMD Auto Center. Qualidade que seu carro merece.</p></footer>
 
 </body>
 </html>
