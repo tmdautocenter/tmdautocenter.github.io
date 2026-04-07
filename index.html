@@ -1,53 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMD AUTO CENTER - Estética Automotiva Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --preto-fundo: #0a0a0a;
+            --preto-card: #161616;
+            --dourado: #d4af37;
+            --dourado-claro: #f1e5ac;
+            --branco: #ffffff;
+            --cinza: #a0a0a0;
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--preto-fundo); 
+            color: var(--branco); 
+            line-height: 1.6;
+        }
+
+        header { 
+            background-color: #000; 
+            padding: 50px 20px; 
+            text-align: center; 
+            border-bottom: 3px solid var(--dourado); 
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5rem; 
+            color: var(--dourado); 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+
+        header p { 
+            margin: 10px 0 0; 
+            font-size: 1.1rem; 
+            color: var(--dourado-claro); 
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+
+        h2 { 
+            text-align: center; 
+            color: var(--branco); 
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        
+        details {
+            background-color: var(--preto-card);
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #2a2a2a;
+            transition: all 0.3s;
+        }
+
+        details:hover { border-color: var(--dourado); }
+        
+        summary {
+            padding: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--dourado-claro);
+        }
+        
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--dourado);
+        }
+        
+        details[open] summary::after { content: '-'; }
+        
+        .conteudo {
+            padding: 20px;
+            background-color: #1c1c1c;
+            border-top: 1px solid #2a2a2a;
+            color: var(--cinza);
+        }
+
+        strong { color: var(--dourado); }
+
+        .btn-whatsapp {
+            display: block;
+            background: linear-gradient(45deg, #b8860b, var(--dourado));
+            color: #000;
+            text-align: center;
+            padding: 18px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 40px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        footer { 
+            text-align: center; 
+            padding: 30px; 
+            color: #555; 
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TMD AUTO CENTER</h1>
+    <p>O Padrão Ouro em Estética Automotiva - Belém/PA</p>
+</header>
+
 <div class="container">
-    <h2>Nossos Processos</h2>
+    <h2>Nossos Serviços Especializados</h2>
 
     <details>
         <summary>Polimento Técnico / Cristalizado</summary>
         <div class="conteudo">
-            <strong>O Passo a Passo:</strong><br><br>
-            1. <strong>Descontaminação:</strong> Remoção de impurezas da pintura com Clay Bar.<br>
-            2. <strong>Mascaramento:</strong> Proteção de borrachas e plásticos com fita específica.<br>
-            3. <strong>Corte:</strong> Remoção de riscos profundos e marcas de lixa.<br>
-            4. <strong>Refino:</strong> Eliminação de marcas do corte e ajuste do brilho.<br>
-            5. <strong>Lustre:</strong> Finalização para brilho espelhado máximo.<br>
-            6. <strong>Proteção:</strong> Aplicação de selante ou cera de carnaúba premium.
+            <strong>O Processo:</strong><br>
+            1. Descontaminação detalhada da pintura (Clay Bar).<br>
+            2. Mascaramento de plásticos e borrachas.<br>
+            3. Etapas de Corte, Refino e Lustre para brilho espelhado.<br>
+            4. Remoção de riscos, hologramas e oxidação.<br>
+            5. Finalização com selante para proteção prolongada.
         </div>
     </details>
 
     <details>
         <summary>Vitrificação de Pintura (Ceramic Coating)</summary>
         <div class="conteudo">
-            <strong>O Passo a Passo:</strong><br><br>
-            1. <strong>Limpeza Química:</strong> Remoção de ceras e óleos antigos.<br>
-            2. <strong>Correção de Pintura:</strong> Polimento completo para deixar a superfície perfeita.<br>
-            3. <strong>Aplicação do Vitrificador:</strong> Camada de nanotecnologia aplicada peça por peça.<br>
-            4. <strong>Cura Técnica:</strong> Tempo de descanso para o produto ancorar no verniz.<br>
-            5. <strong>Inspeção Final:</strong> Verificação com luzes de inspeção para garantir uniformidade.
+            <strong>O Processo:</strong><br>
+            1. Preparação total da superfície com Polimento Técnico.<br>
+            2. Limpeza química (Revelador de hologramas).<br>
+            3. Aplicação do vitrificador de alta tecnologia.<br>
+            4. Proteção contra raios UV, fezes de pássaros e seiva.<br>
+            5. Efeito hidrofóbico (repelência extrema à água).
         </div>
     </details>
 
     <details>
         <summary>Higienização Interna Detalhada</summary>
         <div class="conteudo">
-            <strong>O Passo a Passo:</strong><br><br>
-            1. <strong>Aspiração Profunda:</strong> Remoção de resíduos em todos os vãos e frestas.<br>
-            2. <strong>Limpeza de Teto e Colunas:</strong> Técnica manual para não descolar o tecido.<br>
-            3. <strong>Extração de Sujeira:</strong> Uso de máquina extratora em bancos e carpetes.<br>
-            4. <strong>Higienização de Painel:</strong> Limpeza técnica com pincéis de detalhamento.<br>
-            5. <strong>Hidratação/Proteção:</strong> Condicionamento de couros e plásticos contra raios UV.
+            <strong>O Processo:</strong><br>
+            1. Aspiração profunda e remoção de resíduos.<br>
+            2. Limpeza técnica de teto, colunas e carpetes.<br>
+            3. Extração de sujeira bactericida em bancos.<br>
+            4. Revitalização e proteção de painéis e plásticos.<br>
+            5. Hidratação premium de bancos em couro.
         </div>
     </details>
 
     <details>
         <summary>Estética de Motor</summary>
         <div class="conteudo">
-            <strong>O Passo a Passo:</strong><br><br>
-            1. <strong>Proteção de Componentes:</strong> Isolamento de partes sensíveis e eletrônicas.<br>
-            2. <strong>Limpeza a Seco/Pincel:</strong> Remoção de graxa e barro sem excesso de água.<br>
-            3. <strong>Desengordurante Biodegradável:</strong> Limpeza profunda que não agride borrachas.<br>
-            4. <strong>Verniz de Motor:</strong> Proteção térmica que evita ressecamento e dá brilho seco.
+            <strong>O Processo:</strong><br>
+            1. Isolamento de componentes eletrônicos e sensíveis.<br>
+            2. Limpeza técnica detalhada com pincéis e APC.<br>
+            3. Remoção de gorduras e oxidações acumuladas.<br>
+            4. Aplicação de verniz de motor (proteção e brilho seco).<br>
+            5. Aspecto de carro novo com segurança total.
         </div>
     </details>
 
-    <a href="https://wa.me/5591999999999" class="btn">Solicitar Orçamento no WhatsApp</a>
+    <a href="https://wa.me/5591999999999" class="btn-whatsapp">Agendar via WhatsApp</a>
 </div>
+
+<footer>
+    <p>&copy; 2026 TMD Auto Center. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
