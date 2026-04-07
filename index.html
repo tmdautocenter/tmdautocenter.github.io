@@ -3,62 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMD AUTO CENTER - Estética Automotiva</title>
+    <title>TMD AUTO CENTER - Estética Automotiva Premium</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fff; color: #333; }
-        header { background-color: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
-        .servicos-container { padding: 60px 20px; background-color: #f4f4f4; text-align: center; }
-        .grid-servicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        h3 { color: #e63946; margin-top: 15px; }
-        .icon { font-size: 3rem; }
-        footer { background: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-        .btn-whatsapp { background-color: #25d366; color: white; padding: 15px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; }
-    </style>
-</head>
-<body>
+        /* Cores da Marca */
+        :root {
+            --preto-fundo: #0a0a0a; /* Preto quase puro para profundidade */
+            --preto-card: #161616; /* Preto ligeiramente mais claro para os cards */
+            --dourado-principal: #d4af37; /* Dourado metálico clássico */
+            --dourado-claro: #f1e5ac; /* Dourado suave para textos secundários */
+            --branco-texto: #ffffff;
+            --cinza-texto: #a0a0a0;
+        }
 
-<header>
-    <h1>TMD AUTO CENTER</h1>
-    <p>Estética Automotiva de Alta Performance em Belém</p>
-</header>
+        body { 
+            font-family: 'Poppins', 'Segoe UI', sans-serif; /* Fonte mais moderna e elegante */
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--preto-fundo); 
+            color: var(--branco-texto); 
+        }
 
-<section class="servicos-container">
-    <h2 style="font-size: 2rem; margin-bottom: 40px;">Nossos Serviços Especializados</h2>
-    
-    <div class="grid-servicos">
-        <div class="card">
-            <div class="icon">✨</div>
-            <h3>Polimento Técnico</h3>
-            <p>Correção de pintura detalhada para remoção de micro-riscos e devolução do brilho original.</p>
-        </div>
+        header { 
+            background-color: #000; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-bottom: 3px solid var(--dourado-principal); /* Linha dourada de destaque */
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2); /* Sombra dourada sutil */
+        }
 
-        <div class="card">
-            <div class="icon">🛡️</div>
-            <h3>Vitrificação</h3>
-            <p>Proteção com nanotecnologia que cria uma camada de vidro sobre a pintura contra raios UV e sujeira.</p>
-        </div>
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8rem; 
+            color: var(--dourado-principal); 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
 
-        <div class="card">
-            <div class="icon">🧼</div>
-            <h3>Higienização</h3>
-            <p>Limpeza profunda do interior, com revitalização de plásticos e hidratação de couros.</p>
-        </div>
+        header p { 
+            margin: 10px 0 0; 
+            font-size: 1.1rem; 
+            color: var(--dourado-claro); 
+            font-weight: 300;
+        }
 
-        <div class="card">
-            <div class="icon">⚙️</div>
-            <h3>Estética de Motor</h3>
-            <p>Limpeza técnica e proteção de componentes para um aspecto de carro zero quilômetro.</p>
-        </div>
-    </div>
+        .container { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 50px 20px; 
+        }
 
-    <a href="https://wa.me/seunumeroaqui" class="btn-whatsapp">Solicitar Orçamento via WhatsApp</a>
-</section>
+        h2 { 
+            text-align: center; 
+            color: var(--branco-texto); 
+            margin-bottom: 40px; 
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Estilo da Sanfona (Accordion) Premium */
+        details {
+            background-color: var(--preto-card);
+            margin-bottom: 18px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a; /* Borda escura sutil */
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
 
-<footer>
-    <p>&copy; 2026 TMD Auto Center - Belém, Pará</p>
-</footer>
+        details:hover {
+            border-color: var(--dourado-principal); /* Borda brilha em dourado no hover */
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+        }
+        
+        summary {
+            padding: 22px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+            color: var(--dourado-claro); /* Texto do título em dourado claro */
+        }
+        
+        summary:hover { background-color: #1a1a1a; }
+        
+        /* Ícone de seta dourado */
+        summary::after {
+            content: '+'; /* Usando + e - para um visual mais clean */
+            font-size: 1.5rem;
+            transition: transform 0.3s, color 0.3s;
+            color: var(--dourado-principal);
+            font-weight: 300;
+        }
+        
+        details[open] summary::after { 
+            content: '-';
+            color: var(--branco-texto);
+        }
+        
+        .conteudo {
+            padding: 25px;
+            background-color: #1c1c1c; /* Fundo do conteúdo ligeiramente diferente */
+            border-top: 1px solid #2a2a2a;
+            line-height: 1.7;
+            color: var(--cinza-texto);
+            font-size: 1.05rem;
+        }
 
-</body>
-</html>
+        /* Botão do WhatsApp Estilizado Dourado */
+        .btn-whatsapp {
+            display: block;
+            background: linear-gradient(45deg, #b8860b, var(--dourado-principal)); /* Gradiente dourado */
+            color: #000
